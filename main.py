@@ -11,7 +11,7 @@ with open("passcode.tsv") as fd:
         im = Image.open('test.png')
         im = im.convert("RGBA")
         logo = Image.open('logo.png')
-        box = (155,155,255,255)
+        box = (165,165,245,245)
         im.crop(box)
         region = logo
         region = region.resize((box[2] - box[0], box[3] - box[1]))
